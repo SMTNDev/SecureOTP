@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const cors = require('cors');
+const app = require('./src/app');
 const bodyParser = require('body-parser');
 const connectDB = require('./src/config/db');
 
@@ -23,9 +24,11 @@ app.use('/api/otp', require('./src/api/otp/otp.routes'));
 
 // Default route
 app.get('/', (req, res) => {
-    res.send('SecureOTP API is Running...');
+  res.send('SecureOTP API is Running...');
 });
 
-// Start Server
+// Start the server
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => console.log(`Server running on http://localhost:${PORT}`));
+app.listen(PORT, () => {
+    console.log(`Server running at http://localhost:${PORT}`);
+});
