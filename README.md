@@ -203,6 +203,8 @@ If you find this project useful, consider supporting me by buying a coffee! 🙏
 
 
 
+
+
 ## **📝 License**
 
 This project is licensed under the [Apache-2.0](https://github.com/SMTNDev/SecureOTP/tree/main?tab=Apache-2.0-1-ov-file) License - see the [LICENSE]() file for details.
