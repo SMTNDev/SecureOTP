@@ -213,7 +213,7 @@ Authorization: Bearer <your-jwt-token>
 ---
 
 ## **📊 Status Codes**  
-```
+
 | Status Code | Meaning                                   |
 |-------------|-------------------------------------------|
 | `200 OK`    | Request was successful.                   |
@@ -224,7 +224,7 @@ Authorization: Bearer <your-jwt-token>
 | `404 Not Found` | Resource not found.                   |
 | `409 Conflict` | Resource already exists.               |
 | `500 Internal Server Error` | Server-side issue.        |
-```
+
 ---
 
 ## **⚙️ Error Handling**  
