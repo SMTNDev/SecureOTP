@@ -201,9 +201,7 @@ For major changes, please open an issue first to discuss proposed updates.
 If you find this project useful, consider supporting me by buying a coffee! 🙏
 <a href="https://www.buymeacoffee.com/SMTNDev"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="180" alt="SMTNDev"/></a><br><br>
 
-
-
-
+___
 
 ## **📝 License**
 
