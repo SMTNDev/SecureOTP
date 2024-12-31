@@ -193,7 +193,7 @@ volumes:
 
 ---
 
-Project Structure
+## Project Structure
 
 ```
 ├── backend
@@ -277,7 +277,7 @@ We welcome contributions to improve the OTP Verification & Generation System! If
 
 ## **License**
 
-This project is licensed under the [Apache-2.0](https://github.com/SMTNDev/SecureOTP/tree/main#) License.
+This project is licensed under the [Apache-2.0](https://github.com/SMTNDev/SecureOTP/tree/main) License.
 
 
 ---
@@ -289,7 +289,7 @@ If you have any questions or suggestions, feel free to contact us at [your-email
 
 ---
 
-Acknowledgments
+## Acknowledgments
 
 **Node.js**: The backend framework for building scalable web applications.
 
@@ -311,11 +311,11 @@ Acknowledgments
 
 ### **Key Sections Explained:**
 
-1. **[Project Overview](Project-Overview)**: A brief description of the application, its functionality, and tech stack.
-2. **[Technologies Used](Technologies-Used)**: List of the main technologies employed in the project (Backend, Frontend, DevOps).
-3. **[Installation Guide](Installation-Guide)**: Instructions on setting up the project locally (for both backend and frontend).
-4. **[Docker Setup](Docker-Setup)**: Optional but detailed setup for running the project in Docker containers.
-5. **[Project Structure](#project-structure)**: A clear view of the project structure so developers know where to find files.
-6. **[API Endpoints](API-Endpoints)**: Documentation of key API routes.
-7. **[Contributing](Contributing)**: Encouragement for developers to contribute and explain the process.
-8. **[License & Contact](License-&-Contact)**: Information about project licensing and how to get in touch.
+1. **[Project Overview](project-overview)**: A brief description of the application, its functionality, and tech stack.
+2. **[Technologies Used](technologies-used)**: List of the main technologies employed in the project (Backend, Frontend, DevOps).
+3. **[Installation Guide](installation-guide)**: Instructions on setting up the project locally (for both backend and frontend).
+4. **[Docker Setup](docker-setup)**: Optional but detailed setup for running the project in Docker containers.
+5. **[Project Structure](project-structure)**: A clear view of the project structure so developers know where to find files.
+6. **[API Endpoints](api-endpoints)**: Documentation of key API routes.
+7. **[Contributing](contributing)**: Encouragement for developers to contribute and explain the process.
+8. **[License & Contact](license-&-contact)**: Information about project licensing and how to get in touch.
