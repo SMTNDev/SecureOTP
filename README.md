@@ -311,11 +311,11 @@ If you have any questions or suggestions, feel free to contact us at [your-email
 
 ### **Key Sections Explained:**
 
-1. **[Project Overview](project-overview)**: A brief description of the application, its functionality, and tech stack.
-2. **[Technologies Used](technologies-used)**: List of the main technologies employed in the project (Backend, Frontend, DevOps).
-3. **[Installation Guide](installation-guide)**: Instructions on setting up the project locally (for both backend and frontend).
-4. **[Docker Setup](docker-setup)**: Optional but detailed setup for running the project in Docker containers.
-5. **[Project Structure](project-structure)**: A clear view of the project structure so developers know where to find files.
-6. **[API Endpoints](api-endpoints)**: Documentation of key API routes.
-7. **[Contributing](contributing)**: Encouragement for developers to contribute and explain the process.
-8. **[License & Contact](license-&-contact)**: Information about project licensing and how to get in touch.
+1. **[Features](https://github.com/SMTNDev/SecureOTP#features)**: A brief description of the application, its functionality, and tech stack.
+2. **[Technologies Used](https://github.com/SMTNDev/SecureOTP#technologies-used)**: List of the main technologies employed in the project (Backend, Frontend, DevOps).
+3. **[Installation Guide](https://github.com/SMTNDev/SecureOTP?tab=readme-ov-file#installation-guide)**: Instructions on setting up the project locally (for both backend and frontend).
+4. **[Docker Setup](https://github.com/SMTNDev/SecureOTP?tab=readme-ov-file#docker-setup-optional)**: Optional but detailed setup for running the project in Docker containers.
+5. **[Project Structure](https://github.com/SMTNDev/SecureOTP?tab=readme-ov-file#project-structure)**: A clear view of the project structure so developers know where to find files.
+6. **[API Endpoints](https://github.com/SMTNDev/SecureOTP/tree/main?tab=readme-ov-file#api-endpoints)**: Documentation of key API routes.
+7. **[Contributing](https://github.com/SMTNDev/SecureOTP/tree/main?tab=readme-ov-file#contributing)**: Encouragement for developers to contribute and explain the process.
+8. **[License & Contact](#-license-&-contact)**: Information about project licensing and how to get in touch.
