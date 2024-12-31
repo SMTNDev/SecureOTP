@@ -1,0 +1,31 @@
+{
+  "info": {
+    "name": "OTP API",
+    "_postman_id": "abc123",
+    "description": "Collection for OTP API Testing"
+  },
+  "item": [
+    {
+      "name": "Register User",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:5000/api/auth/register",
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\": \"test@example.com\", \"password\": \"password123\" }"
+        }
+      }
+    },
+    {
+      "name": "Login User",
+      "request": {
+        "method": "POST",
+        "url": "http://localhost:5000/api/auth/login",
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\": \"test@example.com\", \"password\": \"password123\" }"
+        }
+      }
+    }
+  ]
+}
