@@ -1,0 +1,93 @@
+name: CI/CD Pipeline for OTP Verification App
+
+on:
+  push:
+    branches:
+      - main  # Trigger workflow when code is pushed to the 'main' branch
+
+jobs:
+  # Job 1: Build and Test Backend
+  backend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Backend Dependencies
+        run: |
+          cd backend
+          npm install
+
+      - name: Run Backend Tests
+        run: |
+          cd backend
+          npm test
+
+  # Job 2: Build and Test Frontend
+  frontend:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Frontend Dependencies
+        run: |
+          cd frontend
+          npm install
+
+      - name: Build Frontend
+        run: |
+          cd frontend
+          npm run build
+
+  # Job 3: Deploy Backend and Frontend using Docker
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [backend, frontend] # Run this step after backend and frontend jobs are complete
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+
+      - name: Log in to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and Push Backend Image
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          file: ./Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/otp-backend:latest
+
+      - name: Build and Push Frontend Image
+        uses: docker/build-push-action@v3
+        with:
+          context: ./frontend
+          file: ./frontend/Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/otp-frontend:latest
+
+      - name: Deploy with Docker Compose
+        run: |
+          docker-compose down
+          docker-compose pull
+          docker-compose up -d
