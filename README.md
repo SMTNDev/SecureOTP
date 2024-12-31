@@ -191,7 +191,6 @@ volumes:
   mongo-data:
 ```
 
----
 
 ## Project Structure
 
@@ -222,7 +221,6 @@ volumes:
 └── package.json
 ```
 
----
 
 ## API Endpoints
 
@@ -236,7 +234,7 @@ Request Body:
 {
   "email": "user@example.com"
 }
-```
+
 ### 2. `/api/auth/verify`
 ```
 Method: POST
@@ -250,7 +248,12 @@ Request Body:
 }
 ```
 
----
+
+## ☕ Support Us
+
+If you find this project helpful, consider buying us a coffee to support its ongoing development.
+
+<a href="https://www.buymeacoffee.com/SMTNDev"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="180" alt="SMTNDev"/></a><br><br>
 
 ## **Contributing**
 
