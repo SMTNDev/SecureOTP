@@ -1,324 +1,231 @@
-# SecureOTP
-![🚀 Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=semantic-release)  ![📜 License](https://img.shields.io/badge/License-Apache-green?style=for-the-badge&logo=bookstack)  ![🐍 Python](https://img.shields.io/badge/Python-3.8%2B-yellow?style=for-the-badge&logo=python&logoColor=white)  ![🟢 Node.js](https://img.shields.io/badge/Node.js-14%2B-green?style=for-the-badge&logo=nodedotjs&logoColor=white)  ![☕ Java](https://img.shields.io/badge/Java-11%2B-red?style=for-the-badge&logo=openjdk&logoColor=white)
- ![🐳 Docker](https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker&logoColor=white)
+# **🔒 SecureOTP**
+
+![🚀 Version](https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge&logo=semantic-release)  ![📜 License](https://img.shields.io/badge/License-Apache-green?style=for-the-badge&logo=bookstack)  ![🐍 Python](https://img.shields.io/badge/Python-3.8%2B-yellow?style=for-the-badge&logo=python&logoColor=white)  ![🟢 Node.js](https://img.shields.io/badge/Node.js-14%2B-green?style=for-the-badge&logo=nodedotjs&logoColor=white)  ![☕ Java](https://img.shields.io/badge/Java-11%2B-red?style=for-the-badge&logo=openjdk&logoColor=white) ![⚡ Express.js](https://img.shields.io/badge/Express.js-Fast%20&%20Minimalistic-lightgrey?style=for-the-badge&logo=express)  
+![🍃 MongoDB](https://img.shields.io/badge/MongoDB-NoSQL%20Database-green?style=for-the-badge&logo=mongodb&logoColor=white)  
+![🔑 JWT](https://img.shields.io/badge/JWT-Secure%20Auth-blue?style=for-the-badge&logo=jsonwebtokens&logoColor=white)  
+![📧 Nodemailer](https://img.shields.io/badge/Nodemailer-Email%20Service-yellow?style=for-the-badge&logo=maildotru&logoColor=white)  
+![📱 Twilio](https://img.shields.io/badge/Twilio-Cloud%20Communications-red?style=for-the-badge&logo=twilio&logoColor=white)  ![🐳 Docker](https://img.shields.io/badge/Docker-Ready-blue?style=for-the-badge&logo=docker&logoColor=white)
 ![🔧 Build](https://img.shields.io/badge/Build-Passing-brightgreen?style=for-the-badge&logo=githubactions&logoColor=white)
 
-This procedure of OTP generation is proved to be very secure and is used in many applications such as online banking, etc. It provides multi-channel delivery by SMS, email, and push notifications for quick and reliable authentication. Ideal for safeguarding user accounts, transactions, and sensitive information.
+A professional and scalable OTP authentication system built with Node.js, Express, MongoDB, and Next.js. Supports email-based OTP verification, secure JWT authentication, and easy deployment with Docker. 🚀
 
-## **Features**
-
-- **OTP Generation**: Generates secure one-time passwords for user authentication.
-- **OTP Validation**: Verifies the entered OTP against the generated one.
-- **Email Integration**: Sends OTP via email to the user.
-- **Backend API**: Fully RESTful API built with **Node.js**, supporting secure authentication.
-- **Frontend Interface**: A user-friendly frontend built with **Next.js** for OTP input and verification.
-- **MongoDB Integration**: Stores OTP and user-related data securely in MongoDB.
-- **Scalable & Secure**: Built for scalability, security, and performance.
 
 ---
 
-## **Technologies Used**
+## **📜 Features**
 
-- **Frontend**:  
-  - **Next.js** (React-based framework for SSR/SSG)
-  - **React**
-  - **CSS** (TailwindCSS for styling)
+🔐 Secure OTP Generation & Verification – Protect your application with time-limited OTPs.
 
-- **Backend**:  
-  - **Node.js**
-  - **Express.js**  
-  - **JWT** (JSON Web Tokens for authentication)
-  - **Nodemailer** (For email delivery)
-  - **MongoDB** (For data storage)
+📧 Email Integration – OTPs sent via email with customizable templates.
 
-- **DevOps**:  
-  - **Docker** (For containerization)
-  - **Kubernetes** (For orchestration – optional)
-  - **NGINX** (Reverse proxy – optional)
+🌐 Modern UI with Next.js – Clean and responsive user interface.
+
+🛡️ JWT Authentication – Token-based security for session management.
+
+📦 Docker-Ready – Seamless containerization and deployment.
+
+🚀 Scalable Backend – Built with Express and MongoDB.
+
+📊 Admin Dashboard – Monitor users and track OTP activity.
+
+🛠️ CI/CD Support – Automated deployment workflows.
+
+📱 Mobile-Friendly – Fully responsive design.
+
 
 ---
 
-## **Installation Guide**
+## **🚀 Installation**
 
-### **1. Prerequisites**
-
-- **Node.js** (>=18.x.x)  
-- **MongoDB** (Local/Cloud)  
-- **Docker** (Optional, for containerization)  
-- **NPM/Yarn** (Package managers)
-
-### **2. Clone the Repository**
-
-Clone the project to your local machine:
-
+### 1. **Clone the Repository**
 ```bash
 git clone https://github.com/SMTNDev/SecureOTP.git
-```
-```bash
 cd SecureOTP
 ```
 
-### **3. Setup Backend**
+### 2. **Setup Environment Variables**
 
-### Step 1: Install Backend Dependencies
-
-Navigate to the backend directory and install dependencies:
-  ```bash
-  cd backend
-  ```
-  ```bash
-  npm install
-  ```
-
-### Step 2: Configure Environment Variables
-
-Create a `.env` file in the backend directory with the following environment variables:
+Create a .env file in the backend folder and add:
 ```bash
-NODE_ENV=development
-DB_URI=mongodb://localhost:27017/otpDB
+NODE_ENV=production
+DB_URI=mongodb://mongo:27017/otpDB
 JWT_SECRET=your_jwt_secret_key
 EMAIL_USER=your_email@example.com
 EMAIL_PASS=your_email_password
 ```
 
-### Step 3: Run Backend
+### 3. **Docker Setup**
 
-Start the backend server:
+Build and Run the Containers:
 ```bash
-npm run dev
+docker-compose up --build
 ```
 
-The backend will be accessible at ``http://localhost:5000``.
+### 4. **Access the Application**
 
-### **4. Setup Frontend**
+Frontend: ```http://localhost:3000```
 
-### Step 1: Install Frontend Dependencies
+Backend API: ```http://localhost:5000/api```
 
-Navigate to the frontend directory and install dependencies:
-```bash
-cd frontend
-```
-```bash
-npm install
-```
-### Step 2: Configure Environment Variables
+MongoDB: ```localhost:27017```
 
-Create a `.env.local` file in the frontend directory:
-```bash
-NEXT_PUBLIC_API_BASE_URL=http://localhost:5000/api
-```
-
-### Step 3: Run Frontend
-
-Start the frontend server:
-```sh
-npm run dev
-```
-The frontend will be accessible at ``http://localhost:3000``.
 
 
 ---
 
-## **Docker Setup** (Optional)
+## **🧪 API Endpoints**
 
-If you prefer to run the project with Docker, follow the instructions below.
+User Registration - `/api/users/register`
 
-## 1. Build and Run Containers
-
-### Step 1: Build Docker Images
-
-Build the backend and frontend Docker images:
-```bash
-docker-compose build
-```
-### Step 2: Run Docker Containers
-
-Start the containers:
-```bash
-docker-compose up
-```
-Your application will be accessible at:
-
-Backend: `http://localhost:5000`
-
-Frontend: `http://localhost:3000`
-
-MongoDB: `mongodb://localhost:27017`
-
-
-## 2. Docker-Compose File
-
-Make sure your project includes the ``docker-compose.yml`` file:
-```bash
-version: '3.8'
-
-services:
-  backend:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: otp-backend
-    ports:
-      - '5000:5000'
-    environment:
-      - NODE_ENV=production
-      - DB_URI=mongodb://mongo:27017/otpDB
-      - JWT_SECRET=your_jwt_secret_key
-      - EMAIL_USER=your_email@example.com
-      - EMAIL_PASS=your_email_password
-    depends_on:
-      - mongo
-
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: otp-frontend
-    ports:
-      - '3000:3000'
-    depends_on:
-      - backend
-
-  mongo:
-    image: mongo:latest
-    container_name: otp-mongo
-    ports:
-      - '27017:27017'
-    volumes:
-      - mongo-data:/data/db
-
-volumes:
-  mongo-data:
-```
-
-
-## Project Structure
-
-```
-├── backend
-│   ├── controllers
-│   ├── middlewares
-│   ├── models
-│   ├── routes
-│   ├── services
-│   ├── utils
-│   ├── .env
-│   ├── server.js
-│   ├── package.json
-│   └── Dockerfile
-├── frontend
-│   ├── components
-│   ├── pages
-│   ├── services
-│   ├── public
-│   ├── styles
-│   ├── .env.local
-│   ├── next.config.js
-│   └── Dockerfile
-├── docker-compose.yml
-├── .gitignore
-├── README.md
-└── package.json
-```
-
-
-## API Endpoints
-
-### 1. `/api/auth/register`
-
-Method: POST
-Registers a new user and sends an OTP via email.
-```
+Method: `POST`
 Request Body:
 
+```bash
 {
-  "email": "user@example.com"
+  "email": "example@gmail.com",
+  "password": "password123"
 }
-
-### 2. `/api/auth/verify`
 ```
-Method: POST
-Verifies the OTP entered by the user.
 
+Response:
+
+```bash
+{
+  "message": "User registered successfully!"
+}
+```
+
+Send OTP - `/api/otp/send`
+
+Method: `POST`
 Request Body:
 
+```bash
 {
-  "email": "user@example.com",
+  "email": "example@gmail.com"
+}
+```
+
+Response:
+
+```sh
+{
+  "message": "OTP sent successfully!"
+}
+```
+
+Verify OTP - `/api/otp/verify`
+
+Method: `POST`
+Request Body:
+
+```bash
+{
+  "email": "example@gmail.com",
   "otp": "123456"
 }
 ```
 
+Response:
 
-## ☕ Support Us
+```sh
+{
+  "message": "OTP verified successfully!"
+}
+```
 
-If you find this project helpful, consider buying us a coffee to support its ongoing development.
 
+---
+
+## **⚙️ Built With**
+
+Backend: Node.js, Express.js, MongoDB
+
+Frontend: Next.js, React.js
+
+Authentication: JWT, Bcrypt
+
+Email Integration: Nodemailer
+
+Deployment: Docker & Docker Compose
+
+Version Control: Git & GitHub
+
+
+
+---
+
+## **💡 Features Coming Soon**
+
+📱 SMS OTP Support – OTP via SMS using [Twilio](https://www.twilio.com/en-us).
+
+📊 Admin Panel – Advanced admin controls and logs.
+
+📌 [Kubernetes Support](https://kubernetes.io/) – Auto-scaling and multi-container deployment.
+
+🌍 Multi-Language Support – Localization for global users.
+
+
+
+---
+
+## **🤝 Contribution Guide**
+
+We welcome contributions to improve this project! 🙌
+
+1. Fork the Repository.
+
+
+2. Create a New Branch.
+
+
+3. Commit Your Changes.
+
+
+4. Push and Open a Pull Request.
+
+
+
+For major changes, please open an issue first to discuss proposed updates.
+
+
+---
+
+## **📧 Contact & Support**
+
+[![Email](https://img.shields.io/badge/Email-smtndevworks@gmail.com-black?style=for-the-badge&logo=gmail)](mailto:smtndevworks@gmail.com)
+
+[![🐛 Report Issue](https://img.shields.io/badge/Report%20Issue-Open%20an%20Issue-red?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SMTNDev/SecureOTP/issues)
+
+
+
+---
+
+## **☕ Support the Project**
+
+If you find this project useful, consider supporting me by buying a coffee! 🙏
 <a href="https://www.buymeacoffee.com/SMTNDev"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="180" alt="SMTNDev"/></a><br><br>
 
-## **Contributing**
 
-We welcome contributions to improve the OTP Verification & Generation System! If you'd like to contribute:
+---
 
-1. Fork the repository and clone it to your local machine.
+## **📝 License**
 
-
-2. Create a feature branch (git checkout -b feature-name).
+This project is licensed under the [Apache-2.0](https://github.com/SMTNDev/SecureOTP/tree/main?tab=Apache-2.0-1-ov-file) License - see the [LICENSE]() file for details.
 
 
-3. Make changes and commit them (git commit -m 'Add feature').
+---
 
+## **🌟 Acknowledgments**
 
-4. Push to the feature branch (git push origin feature-name).
+Open Source Libraries – Thanks to all the amazing libraries and tools used in this project.
 
-
-5. Create a pull request describing your changes.
-
+Contributors – Thank you for improving the project!
 
 
 
 ---
 
-## **License**
+## **🎉 Thank You!**
 
-This project is licensed under the [Apache-2.0](https://github.com/SMTNDev/SecureOTP/tree/main) License.
-
-
----
-
-## **Contact**
-
-If you have any questions or suggestions, feel free to contact us at [your-email@example.com].
-
-
----
-
-## Acknowledgments
-
-**Node.js**: The backend framework for building scalable web applications.
-
-**MongoDB**: The database used for storing OTP and user information.
-
-**Next.js**: The React framework powering the frontend.
-
-**Docker**: Used to containerize the application for easy deployment.
-
-**JWT**: Provides secure token-based authentication for the app.
-
-
-
----
-
-### **_Happy Coding!_**
-
----
-
-### **Key Sections Explained:**
-
-1. **[Features](https://github.com/SMTNDev/SecureOTP#features)**: A brief description of the application, its functionality, and tech stack.
-2. **[Technologies Used](https://github.com/SMTNDev/SecureOTP#technologies-used)**: List of the main technologies employed in the project (Backend, Frontend, DevOps).
-3. **[Installation Guide](https://github.com/SMTNDev/SecureOTP?tab=readme-ov-file#installation-guide)**: Instructions on setting up the project locally (for both backend and frontend).
-4. **[Docker Setup](https://github.com/SMTNDev/SecureOTP?tab=readme-ov-file#docker-setup-optional)**: Optional but detailed setup for running the project in Docker containers.
-5. **[Project Structure](https://github.com/SMTNDev/SecureOTP?tab=readme-ov-file#project-structure)**: A clear view of the project structure so developers know where to find files.
-6. **[API Endpoints](https://github.com/SMTNDev/SecureOTP/tree/main?tab=readme-ov-file#api-endpoints)**: Documentation of key API routes.
-7. **[Contributing](https://github.com/SMTNDev/SecureOTP/tree/main?tab=readme-ov-file#contributing)**: Encouragement for developers to contribute and explain the process.
-8. **[License & Contact](#-license-&-contact)**: Information about project licensing and how to get in touch.
+We hope [SecureOTP](https://github.com/SMTNDev/SecureOTP) secures your applications efficiently. Don't forget to ⭐ star this repository and share it with others! 🌟
