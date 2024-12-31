@@ -315,7 +315,7 @@ Acknowledgments
 2. **[Technologies Used](Technologies-Used)**: List of the main technologies employed in the project (Backend, Frontend, DevOps).
 3. **[Installation Guide](Installation-Guide)**: Instructions on setting up the project locally (for both backend and frontend).
 4. **[Docker Setup](Docker-Setup)**: Optional but detailed setup for running the project in Docker containers.
-5. **[Project Structure](Project-Structure)**: A clear view of the project structure so developers know where to find files.
+5. **[Project Structure](#project-structure)**: A clear view of the project structure so developers know where to find files.
 6. **[API Endpoints](API-Endpoints)**: Documentation of key API routes.
 7. **[Contributing](Contributing)**: Encouragement for developers to contribute and explain the process.
 8. **[License & Contact](License-&-Contact)**: Information about project licensing and how to get in touch.
