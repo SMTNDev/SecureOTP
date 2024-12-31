@@ -10,7 +10,6 @@
 A professional and scalable OTP authentication system built with Node.js, Express, MongoDB, and Next.js. Supports email-based OTP verification, secure JWT authentication, and easy deployment with Docker. 🚀
 
 
----
 
 ## **📜 Features**
 
@@ -33,7 +32,6 @@ A professional and scalable OTP authentication system built with Node.js, Expres
 📱 Mobile-Friendly – Fully responsive design.
 
 
----
 
 ## **🚀 Installation**
 
@@ -71,13 +69,13 @@ MongoDB: ```localhost:27017```
 
 
 
----
 
 ## **🧪 API Endpoints**
 
 User Registration - `/api/users/register`
 
 Method: `POST`
+
 Request Body:
 
 ```bash
@@ -98,6 +96,7 @@ Response:
 Send OTP - `/api/otp/send`
 
 Method: `POST`
+
 Request Body:
 
 ```bash
@@ -117,6 +116,7 @@ Response:
 Verify OTP - `/api/otp/verify`
 
 Method: `POST`
+
 Request Body:
 
 ```bash
@@ -135,7 +135,6 @@ Response:
 ```
 
 
----
 
 ## **⚙️ Built With**
 
@@ -153,7 +152,6 @@ Version Control: Git & GitHub
 
 
 
----
 
 ## **💡 Features Coming Soon**
 
@@ -167,7 +165,6 @@ Version Control: Git & GitHub
 
 
 
----
 
 ## **🤝 Contribution Guide**
 
@@ -189,7 +186,6 @@ We welcome contributions to improve this project! 🙌
 For major changes, please open an issue first to discuss proposed updates.
 
 
----
 
 ## **📧 Contact & Support**
 
@@ -199,7 +195,6 @@ For major changes, please open an issue first to discuss proposed updates.
 
 
 
----
 
 ## **☕ Support the Project**
 
@@ -207,14 +202,12 @@ If you find this project useful, consider supporting me by buying a coffee! 🙏
 <a href="https://www.buymeacoffee.com/SMTNDev"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="180" alt="SMTNDev"/></a><br><br>
 
 
----
 
 ## **📝 License**
 
 This project is licensed under the [Apache-2.0](https://github.com/SMTNDev/SecureOTP/tree/main?tab=Apache-2.0-1-ov-file) License - see the [LICENSE]() file for details.
 
 
----
 
 ## **🌟 Acknowledgments**
 
@@ -224,7 +217,6 @@ Contributors – Thank you for improving the project!
 
 
 
----
 
 ## **🎉 Thank You!**
 
